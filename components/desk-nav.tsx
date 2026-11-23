@@ -11,6 +11,7 @@ const links = [
   { href: "/reviews", label: "Reviews" },
   { href: "/studies", label: "Studies" },
   { href: "/growth", label: "Growth" },
+  { href: "/legal", label: "Legal" },
 ];
 
 export function DeskNav({ tone }: { tone: "dark" | "light" }) {

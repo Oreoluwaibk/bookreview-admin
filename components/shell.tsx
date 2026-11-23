@@ -13,8 +13,8 @@ export function Shell({
   privileged: boolean;
 }) {
   return (
-    <div className="min-h-full lg:grid lg:grid-cols-[15.5rem_minmax(0,1fr)]">
-      <aside className="hidden bg-lake-deep text-paper lg:flex lg:min-h-full lg:flex-col lg:justify-between lg:px-5 lg:py-6">
+    <div className="min-h-dvh lg:grid lg:grid-cols-[15.5rem_minmax(0,1fr)]">
+      <aside className="hidden bg-lake-deep text-paper lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:justify-between lg:overflow-y-auto lg:px-5 lg:py-6">
         <div>
           <Link href="/" className="flex items-center gap-3">
             <Mark className="h-10 w-10 shrink-0" />

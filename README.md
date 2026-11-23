@@ -17,6 +17,7 @@ The reader app lives next to this project in `../bookreview`. People search the 
 | Reviews | `/reviews` | Public reviews: the lesson, the practice, who it is for, stars, and whether it covers the whole book or one chapter |
 | Studies | `/studies` | Bible studies, with their verses, notes, lesson, and practice |
 | Growth | `/growth` | The saved reading of a person's growth: what they should know, do, and become |
+| Legal | `/legal` | The privacy notice, the terms of use, and the delete-account page that the reader site shows in its footer |
 
 Search and filters:
 
@@ -34,6 +35,7 @@ Each change asks for confirmation when it removes something, then refreshes the 
 - **Remove reading.** That entry leaves the person's shelf.
 - **Make a study public or private.** A public study shows up for anyone on the same theme and subject. A private study stays with the reader.
 - **Remove study.** The study and its verses are deleted.
+- **Edit privacy, terms, or the delete page.** `/legal/privacy`, `/legal/terms`, and `/legal/delete` change the pages linked from the reader site footer. A save writes `bookreview/content/legal.json`, which the website reads, and also stores the page in Supabase when `site_pages` exists and `SUPABASE_SECRET_KEY` is set. The table is created with `bookreview/supabase/site-pages.sql`.
 
 The desk does not create accounts, edit a review's words, or delete a book or a profile. Those stay with the reader app.
 
